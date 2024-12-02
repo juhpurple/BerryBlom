@@ -1,0 +1,137 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF5EE;
+  margin: 0;
+  padding: 0;
+}
+
+/* Seção Sobre */
+#sobre {
+  padding: 50px 20px;
+  background-color: #FFF5EE;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 36px;
+  color: #36140a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sobre h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #4b9f56;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.sobre p {
+  font-size: 18px;
+  color: #36140a;
+  margin-bottom: 40px;
+}
+
+/* Elementos da seção */
+.elementos-sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sobre-elementos {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(143, 11, 84, 0.1);
+  padding: 20px;
+  margin: 20px;
+  flex-basis: 45%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-elementos:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(214, 27, 105, 0.2);
+}
+
+.sobre-elementos h4 {
+  font-size: 24px;
+  color: #36140a;
+  margin-bottom: 15px;
+}
+
+.sobre-elementos p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.elementos-sobre picture img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .elementos-sobre {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .sobre-elementos {
+    flex-basis: 80%; 
+    margin: 10px 0;
+  }
+
+  .elementos-sobre picture img {
+    max-width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #sobre {
+    padding: 30px 10px;
+  }
+
+  .sobre h2 {
+    font-size: 28px;
+  }
+
+  .sobre p {
+    font-size: 16px;
+  }
+
+  .elementos-sobre picture img {
+    max-width: 250px;
+    height: 200px;
+  }
+
+  .sobre-elementos {
+    flex-basis: 100%; 
+    margin: 15px 0;
+    text-align: center; 
+  }
+
+  .sobre-elementos h4 {
+    font-size: 20px;
+  }
+
+  .sobre-elementos p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,141 @@
+#produtos{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #FFF5EE;
+    padding: 0 25vh;
+}
+
+
+.secao-produtos {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.secao-produtos p {
+    font-size: 1.1rem;
+}
+
+.titulos{
+    margin-bottom: 50px;
+     font-size: 1.9rem; 
+    color: #36140a; 
+}
+
+.titulos p{
+    margin-top: 20px;
+}
+
+.titulos h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #4b9f56;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+.doces-imgs{
+    display: flex;
+    grid-template-columns: 10fr 10fr;
+    gap: 50px;
+}
+
+.card-oculos picture img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-oculos{
+    background-color: #f6f6f6;
+    padding: 20px 10px;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: solid;
+    border-color: #4b9f56;
+}
+
+.card-oculos h3{
+    font-size: 2rem;
+    color: #36140a;
+}
+
+.card-oculos p{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.card-oculos:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(214, 27, 105, 0.2);
+  }
+
+@media (max-width: 1440px) {
+    #produtos {
+        padding: 0 5vw;
+    }
+
+    .card-oculos {
+        width: 45%;
+        height: 50%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .doces-imgs {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-oculos {
+        width: 90%;
+    }
+
+    .titulos {
+        font-size: 1.5rem;
+    }
+
+    .card-oculos h3 {
+        font-size: 1.8rem;
+    }
+
+    .card-oculos p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulos {
+        font-size: 1.2rem;
+    }
+
+    .titulos h2::after {
+        width: 50px;
+    }
+
+    .card-oculos {
+        padding: 15px 8px;
+    }
+
+    .card-oculos h3 {
+        font-size: 1.6rem;
+    }
+
+    .card-oculos p {
+        font-size: 1rem;
+    }
+}
